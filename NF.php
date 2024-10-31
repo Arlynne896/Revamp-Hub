@@ -48,17 +48,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
+        <a href="NF.php">Home</a>
+		<a href="about.php">About</a>
         <a href="#">Feedback</a>
         <a href="#">Artisans</a>
         <a href="#">Contact</a>
     </div>
 
     <div id="main">
+		<span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+		
         <div class="header">
             <h1>About Us<br></h1><q>The moment you tap, we’re already there</q>
         </div>
-        <span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
 
         <div class="container">
             <h1>Before and After</h1>
@@ -83,6 +85,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <p>No posts yet.</p>
             <?php endif; ?>
         </div>
+		<hr>
+		<footer>
+			<p><small>Made by Abalain, Abar, Almaida, Alvarez & Arbolado 2024 © Copyright Intended</small></p>
+		</footer>
     </div>
 
     <script>
