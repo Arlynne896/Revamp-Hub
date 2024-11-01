@@ -52,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<a href="about.php">About</a>
         <a href="#">Feedback</a>
         <a href="#">Artisans</a>
+		<a href="faq.php">Frequently Asked Questions</a>
         <a href="#">Contact</a>
     </div>
 
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
 		
         <div class="header">
-            <h1>About Us<br></h1><q>The moment you tap, we’re already there</q>
+            <h1>Sample<br></h1>
         </div>
 
         <div class="container">
@@ -76,9 +77,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php foreach ($_SESSION['posts'] as $post): ?>
                     <div class="post">
                         <p><?php echo $post['text']; ?></p>
-                        <?php foreach ($post['images'] as $image): ?>
-                            <img src="<?php echo $image; ?>" alt="Uploaded Image">
-                        <?php endforeach; ?>
+						<div class="">
+							<?php foreach ($post['images'] as $image): ?>
+								<img src="<?php echo $image; ?>" alt="Uploaded Image">
+							<?php endforeach; ?>
+						</div>
+						
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
@@ -91,16 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		</footer>
     </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
+	<script src="navbar.js"></script>
 </body>
 </html>

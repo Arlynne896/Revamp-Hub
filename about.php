@@ -10,7 +10,55 @@
 			body {
 				font-family: Arial, sans-serif;
 				margin: 0px;
-				background-color: #B0BEC5;
+				background-color: teal;
+            }
+            .header {
+				color: #faf6f6; 
+				padding: 20px;
+				text-align: center;
+				border-radius: 10px;
+			}
+
+			h1 {
+				font-size: 28px; 
+				color: #faf8f8; 
+				margin: 20px 0;
+			}
+
+			p {
+				font-size: 18px;
+				color: #faf7f7;
+				line-height: 1.6; 
+				margin: 15px 0;
+			}
+
+			dl {
+				color: white;
+				padding: 20px; 
+				border-radius: 10px; 
+				margin: 20px 0;
+			}
+
+			dt {
+				font-weight: bold; 
+				color: #fcfafa; 
+				margin-top: 10px; 
+				font-size: 28px;
+			}
+
+			dd {
+				margin: 0 0 10px 20px; 
+				color: #fdf7f7; 
+				font-size: 18px;
+			}
+
+			@media screen and (max-width: 768px) {
+				h1 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 14px; 
+				}
 			}
 			.sidenav {
 			  height: 100%;
@@ -159,6 +207,7 @@
 			<a href="about.php">About</a>
 			<a href="#">Feedback</a>
 			<a href="#">Artisans</a>
+			<a href="faq.php">Frequently Asked Questions</a>
 			<a href="#">Contact</a>
 		</div>
 			<div id="main">
@@ -276,16 +325,6 @@
 					<p><small>Made by Abalain, Abar, Almaida, Alvarez & Arbolado 2024 © Copyright Intended</small></p>
 				</footer>
 			</div>
-	<script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
+	<script src="navbar.js"></script>
 	</body>
 </html>
