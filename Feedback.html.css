@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=1.0">
+    <title>Responsive Form Card</title>
+    <link rel="stylesheet" href="style.css"
+      <link rel=" stylesheet" href=""
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Sg946-5Lqe--PkOOj_blQIfQcQ62cY_6y8hiL4KfsX0gjKUaE1cLlpU&s=10');
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #00B5AD;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+    text-align: center;
+    color: #333;
+    }
+    h3 {
+    color: #333;
+    }
+    
+    .form-group {
+    margin-bottom: 15px;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    
+    button:hover {
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+<div class = "container">
+    <h1>Customer's Feedback</h1>
+    <h3>This will help to further improve the work
+    </h3>
+    <div class="form-box">
+      <!--  <div class="textup">
+            <i class="fa fa-solid fa-clock"></i>   It only takes two minutes!!
+        gusto ko ilagay to pero baka ayaw mo kaya coment konalang muna T-T
+        </div>-->
+        <form>
+            <label for="uname">
+                <i class="fa fa-solid fa-user"></i>
+                Name
+            </label>
+            <input type="text" id="uname" 
+                   name="uname" required>
+
+            <label for="email">
+                <i class="fa fa-solid fa-envelope"></i>
+                Email Address
+            </label>
+            <input type="email" id="email" 
+                   name="email" required>
+
+            <label for="phone">
+                <i class="fa-solid fa-phone"></i>
+                Phone No
+            </label>
+            <input type="tel" id="phone" 
+                   name="phone" required>
+
+            <label>
+                <i class="fas fa-face-smile"></i>
+                Do you satisfy with our service?
+            </label>
+            <div class="radio-group">
+                  <label>
+                <input type="radio" id="yes" 
+                       name="satisfy" value="yes">
+                 <for="yes">Yes
+                
+                <input type="radio" id="no" 
+                       name="satisfy" value="no">
+                <for="no">No
+                </label>
+            </div>
+
+            <label for="msg">
+                <i class="fa-solid fa-comments" 
+                   style="margin-right: 3px;"></i>
+                Write your Suggestions:
+            </label>
+            <textarea id="msg" name="msg" 
+                      rows="4" cols="10" required>
+            </textarea>
+            <button type="submit">
+                Submit
+            </button>
+            
+            <div class="message" id="thankYouMessage" style="display: none;">Thank you for your feedback!</div>
+            <!-- nag search ako about dito sa showMessag-->
+            <script>
+            function showMessage(event) {
+            event.preventDefault(); // Prevent form submission
+            document.getElementById('thankYouMessage').style.display = 'block'; // Show message
+            return false; // Ensure the form doesn't actually submit
+            }
+            </script>
+            
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
